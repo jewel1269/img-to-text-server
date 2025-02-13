@@ -1,0 +1,3 @@
+MONGODB_URI=mongodb+srv://jewel12:8bezriPPDorE7NP4@cluster0.o1krf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+PORT=5000
+
