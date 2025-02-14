@@ -4,8 +4,11 @@ import {
   HarmCategory,
 } from "@google/generative-ai";
 import axios from "axios";
+import dotenv from 'dotenv'
+dotenv.config()
 
-const API_KEY = "AIzaSyA_8XFZZA63z2S_8IAJZOuq8BvSbuAv7Ss";
+const API_KEY = process.env.GEMINI_API_KEY;
+console.log(API_KEY);
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
